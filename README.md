@@ -5,9 +5,9 @@ This project allows you to manage user data through a simple command-line interf
 
 ## Project Structure
 
-- **main.py**: This is the main file of the project that handles adding users, retrieving data, and interacting with the user.
+- **user_input.py**: This is the main file of the project that handles adding users, retrieving data, and interacting with the user.
 - **user_retrive_data.py**: This file contains the `retrive_data` function, which is used to retrieve user data from the text file.
-- **migrate_to_mysql.py**: This script is responsible for migrating user data from a text file to a MySQL database.
+- **mysql_connection.pyg**: This script is responsible for migrating user data from a text file to a MySQL database.
 
 ## Setup
 
@@ -21,7 +21,7 @@ This project allows you to manage user data through a simple command-line interf
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/user-data-management.git
+   git clone [https://github.com/yourusername/user-data-management.git](https://github.com/ahmedelagamy132/user_input_sql.git)
    cd user-data-management
    ```
 
@@ -44,7 +44,7 @@ This project allows you to manage user data through a simple command-line interf
      );
      ```
 
-4. Update the MySQL connection credentials in `migrate_to_mysql.py`:
+4. Update the MySQL connection credentials in `mysql_connection.py`:
    ```python
    db_connection = mysql.connector.connect(
        host="localhost",
@@ -58,16 +58,16 @@ This project allows you to manage user data through a simple command-line interf
 
 ### Running the Application
 
-- Execute the `main.py` script to start managing user data:
+- Execute the `user_input.py` script to start managing user data:
   ```bash
-  python main.py
+  python user_input.py
   ```
 
 ### Migrating Data to MySQL
 
-- Run the `migrate_to_mysql.py` script to migrate data:
+- Run the `mysql_connection.py` script to migrate data:
   ```bash
-  python migrate_to_mysql.py
+  python mysql_connection.py
   ```
 
 ## License
